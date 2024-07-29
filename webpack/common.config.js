@@ -6,7 +6,7 @@ module.exports = {
     app: ['./src/bootstrap.js'],
     vendor: './src/vendor.js',
   },
-
+  
   resolve: {
     extensions: ['.js', '.scss'],
 
@@ -44,4 +44,7 @@ module.exports = {
       minChunks: Infinity,
     }),
   ],
+  
 };
+
+

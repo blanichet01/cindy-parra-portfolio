@@ -1,5 +1,4 @@
 import React, { Component} from "react";
-import { Link } from 'react-router-dom';
 
 export default class PortfolioItem extends Component {
     //componente funcional o de presentacion, para renderizar contenido osea como voy a presentar el contenido

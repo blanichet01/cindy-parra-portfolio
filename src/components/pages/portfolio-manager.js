@@ -2,7 +2,7 @@ import axios from 'axios';
 import React, { Component } from 'react';
 import PortfolioSidebarList from '../portfolio/portfolio-sidebar-list';
 import PortfolioForm from '../portfolio/portfolio-form';
-import { error } from 'jquery';
+
 
 export default class PortfolioManager extends Component {
     constructor() {

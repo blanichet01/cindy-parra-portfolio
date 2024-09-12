@@ -1,5 +1,5 @@
 import React, { Component} from "react";
-
+import { Link } from "react-router-dom/cjs/react-router-dom.min";
 export default class PortfolioItem extends Component {
     //componente funcional o de presentacion, para renderizar contenido osea como voy a presentar el contenido
     //No se puede usar constructores dentro de estos componentes
@@ -26,6 +26,7 @@ export default class PortfolioItem extends Component {
         render(){
         const { id, description, thumb_image_url, logo_url} = this.props.item;
     return (
+      <Link to={`/portfolio/${id}`}> 
         <div className="portfolio-item-wrapper"
         onMouseEnter={() => this.handleMouseEnter()}
         onMouseLeave={() => this.handleMouseLeave()}>
@@ -45,6 +46,7 @@ export default class PortfolioItem extends Component {
             
             {/* <Link to = {`/portfolio/${id}`}>Link</Link> */}
         </div>
+        </Link>
     )
 }
 }

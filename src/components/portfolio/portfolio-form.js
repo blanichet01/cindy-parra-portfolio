@@ -151,7 +151,7 @@ export default class PortfolioForm extends Component {
   }
 
   handleSubmit(event) {
-    axios({
+   axios({
       method: this.state.apiAction,
       url: this.state.apiUrl,
       data: this.buildForm(),
